@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Chord_calculator</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Chord_calculator/Chord_calculator_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Chord_calculator/Chord_calculator.rb">Chord_calculator/Chord_calculator.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-calc_chord">#calc_chord</a></li>
+					
+					<li><a href="#method-i-get_last_delta">#get_last_delta</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+					<li><a href="#method-i-make_chordcircle">#make_chordcircle</a></li>
+					
+					<li><a href="#method-i-pickup_pivotlist">#pickup_pivotlist</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Chord_calculator</h1>
+
+		<div id="description">
+			<p>
+<a href="Chord_calculator.html">Chord_calculator</a>
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>@chord_a</dt><dd><p>
+コード(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>@chord_b</dt><dd><p>
+コード(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>@delta</dt><dd><p>
+直前に計算したChord距離(Int)
+</p>
+</dd>
+</dl>
+
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="CHORD_DISTANCE_UNMEASURABLE">CHORD_DISTANCE_UNMEASURABLE</a></dt>
+				
+				<dd class="description"><p>
+chord関数を測定できなかった時に返す（助ｪ大きな）定数
+</p></dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="calc-chord-method" class="method-detail ">
+				<a name="method-i-calc_chord"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">calc_chord</span><span
+						class="method-args">(in1,in2)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+chord関数
+</p>
+<h2>引数</h2>
+<dl>
+<dt>in1</dt><dd><p>
+コード(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>in2</dt><dd><p>
+コード(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+</dl>
+<h2>戻り値</h2>
+<p>
+コード間距離（Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="calc-chord-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord_calculator/Chord_calculator.rb, line 35</span>
+ 35:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">calc_chord</span>(<span class="ruby-identifier">in1</span>,<span class="ruby-identifier">in2</span>)
+ 36:         
+ 37:                 <span class="ruby-comment cmt">#引数をプロパティに記録する</span>
+ 38:                 <span class="ruby-ivar">@chord_a</span> = <span class="ruby-identifier">in1</span>
+ 39:                 <span class="ruby-ivar">@chord_b</span> = <span class="ruby-identifier">in2</span>
+ 40:                 
+ 41:                 <span class="ruby-comment cmt">#ピヴォット候補配列を求める</span>
+ 42:                 <span class="ruby-comment cmt">#ピヴォットが必要ない場合（つまり与えられたコードがダイアトニックの場合）与えられたコード名がそのまま入る</span>
+ 43:                 
+ 44:                 <span class="ruby-comment cmt">#@chord_aのchord circleの中で@chord_aのコードネームを探索する．</span>
+ 45:                 <span class="ruby-ivar">@pivot_a</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+ 46:                 <span class="ruby-ivar">@pivot_a</span> = <span class="ruby-identifier">pickup_pivotlist</span>(<span class="ruby-ivar">@chord_a</span>)
+ 47:                 
+ 48:                 <span class="ruby-comment cmt">#@chord_bのchord circleの中で@chord_bのコードネームを探索する．</span>
+ 49:                 <span class="ruby-ivar">@pivot_b</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+ 50:                 <span class="ruby-ivar">@pivot_b</span> = <span class="ruby-identifier">pickup_pivotlist</span>(<span class="ruby-ivar">@chord_b</span>)
+ 51:                 
+ 52:                 
+ 53:                 <span class="ruby-ivar">@chordcircle_a</span> = <span class="ruby-identifier">make_chordcircle</span>(<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">get_minorflag</span>())
+ 54:                 <span class="ruby-ivar">@chordcircle_b</span> = <span class="ruby-identifier">make_chordcircle</span>(<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">get_minorflag</span>())
+ 55:                 
+ 56:                 <span class="ruby-comment cmt">#結果格納用Array</span>
+ 57:                 <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+ 58:                 
+ 59:                 <span class="ruby-comment cmt">#@chord_aのchord circleの中に@chord_bのピヴォットコード名が存在するか．</span>
+ 60:                 <span class="ruby-comment cmt">#全てのピヴォットコードの組み合わせを探索</span>
+ 61:                 <span class="ruby-comment cmt">#現在探索対象となっているchord_aのピヴォットコード名がpivot_a_nowcheck</span>
+ 62:                 <span class="ruby-comment cmt">#現在探索対象となっているchord_bのピヴォットコード名がpivot_b_nowcheck</span>
+ 63:                 <span class="ruby-ivar">@pivot_a</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pivot_a_nowcheck</span><span class="ruby-operator">|</span>
+ 64:                         <span class="ruby-ivar">@pivot_b</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pivot_b_nowcheck</span><span class="ruby-operator">|</span>
+ 65:                                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">pivot_b_nowcheck</span>) <span class="ruby-keyword kw">then</span>
+ 66:                                         <span class="ruby-comment cmt">#見つかった</span>
+ 67:                                         
+ 68:                                         <span class="ruby-comment cmt">#以下，和音の5度圏上の距離を算出する</span>
+ 69:                                         <span class="ruby-comment cmt">#chord_aの和音の5度上でpivot_a_nowcheckが存在する位置を，距離測定の起点base_positionとする</span>
+ 70:                                         <span class="ruby-identifier">base_position</span> = <span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">pivot_a_nowcheck</span>),<span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">length</span>)
+ 71:                                         
+ 72:                                         <span class="ruby-comment cmt">#距離計測カウンタをリセット</span>
+ 73:                                         <span class="ruby-identifier">counter</span> = <span class="ruby-value">0</span>
+ 74:                                         
+ 75:                                         <span class="ruby-comment cmt">#和音の5度圏を時計回りに数える</span>
+ 76:                                         <span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">length</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+ 77:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@chordcircle_a</span>[<span class="ruby-identifier">base_position</span>.<span class="ruby-identifier">get</span>()] <span class="ruby-operator">==</span> <span class="ruby-identifier">pivot_b_nowcheck</span> <span class="ruby-keyword kw">then</span>
+ 78:                                                         <span class="ruby-comment cmt">#pivot_b_nowcheckと一致したら数えるのをやめる</span>
+ 79:                                                         <span class="ruby-keyword kw">break</span>
+ 80:                                                 <span class="ruby-keyword kw">else</span>
+ 81:                                                         <span class="ruby-comment cmt">#pivot_b_nowcheckと一致しなかったらもう1ステップ時計回りに進む</span>
+ 82:                                                         <span class="ruby-identifier">base_position</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">1</span>)
+ 83:                                                         <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+ 84:                                                 <span class="ruby-keyword kw">end</span>
+ 85:                                         <span class="ruby-keyword kw">end</span>
+ 86:                                         
+ 87:                                         <span class="ruby-comment cmt">#もしも得られた距離が和音の5度圏の長さの半分より大きければ，</span>
+ 88:                                         <span class="ruby-comment cmt">#反時計回りに探索した方が早かった事になるので，反時計回りの距離に修正する</span>
+ 89:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">counter</span> <span class="ruby-operator">&gt;</span> (<span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2.0</span>) <span class="ruby-keyword kw">then</span>
+ 90:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-ivar">@chordcircle_a</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">counter</span>
+ 91:                                         <span class="ruby-keyword kw">end</span>
+ 92:                                         
+ 93:                                         <span class="ruby-comment cmt">#和音の5度圏からピヴォットコードとしての場合，外に伸びた枝の分を追加する</span>
+ 94:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pivot_a</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">then</span>
+ 95:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+ 96:                                         <span class="ruby-keyword kw">end</span>
+ 97:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pivot_b</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">then</span>
+ 98:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+ 99:                                         <span class="ruby-keyword kw">end</span>
+100:                                         
+101:                                         <span class="ruby-comment cmt">#得られた距離を結果格納Arrayにプッシュする</span>
+102:                                         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">counter</span>)
+103:                                 
+104:                                 <span class="ruby-keyword kw">else</span>
+105:                                         <span class="ruby-comment cmt">#見つからなかった→chord距離算出不可</span>
+106:                                         <span class="ruby-comment cmt">#十分に大きな値を結果としてプッシュする</span>
+107:                                         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">CHORD_DISTANCE_UNMEASURABLE</span>)
+108:                                 <span class="ruby-keyword kw">end</span>
+109:                                 
+110:                         <span class="ruby-keyword kw">end</span>
+111:                 <span class="ruby-keyword kw">end</span>
+112:                 
+113:                 
+114:                 
+115:                 <span class="ruby-comment cmt">#@chord_bのchord circleの中に@chord_aのピヴォットコード名が存在するか．</span>
+116:                 <span class="ruby-comment cmt">#全てのピヴォットコードの組み合わせを探索</span>
+117:                 <span class="ruby-comment cmt">#現在探索対象となっているchord_aのピヴォットコード名がpivot_a_nowcheck</span>
+118:                 <span class="ruby-comment cmt">#現在探索対象となっているchord_bのピヴォットコード名がpivot_b_nowcheck</span>
+119:                 <span class="ruby-ivar">@pivot_b</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pivot_b_nowcheck</span><span class="ruby-operator">|</span>
+120:                         <span class="ruby-ivar">@pivot_a</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pivot_a_nowcheck</span><span class="ruby-operator">|</span>
+121:                                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">pivot_a_nowcheck</span>) <span class="ruby-keyword kw">then</span>
+122:                                         <span class="ruby-comment cmt">#見つかった</span>
+123:                                         
+124:                                         <span class="ruby-comment cmt">#以下，和音の5度圏上の距離を算出する</span>
+125:                                         <span class="ruby-comment cmt">#chord_bの和音の5度上でpivot_b_nowcheckが存在する位置を，距離測定の起点base_positionとする</span>
+126:                                         <span class="ruby-identifier">base_position</span> = <span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">pivot_b_nowcheck</span>),<span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">length</span>)
+127:                                         
+128:                                         <span class="ruby-comment cmt">#距離計測カウンタをリセット</span>
+129:                                         <span class="ruby-identifier">counter</span> = <span class="ruby-value">0</span>
+130:                                         
+131:                                         <span class="ruby-comment cmt">#和音の5度圏を時計回りに数える</span>
+132:                                         <span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">length</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+133:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@chordcircle_b</span>[<span class="ruby-identifier">base_position</span>.<span class="ruby-identifier">get</span>()] <span class="ruby-operator">==</span> <span class="ruby-identifier">pivot_a_nowcheck</span> <span class="ruby-keyword kw">then</span>
+134:                                                         <span class="ruby-comment cmt">#pivot_a_nowcheckと一致したら数えるのをやめる</span>
+135:                                                         <span class="ruby-keyword kw">break</span>
+136:                                                 <span class="ruby-keyword kw">else</span>
+137:                                                         <span class="ruby-comment cmt">#pivot_a_nowcheckと一致しなかったらもう1ステップ時計回りに進む</span>
+138:                                                         <span class="ruby-identifier">base_position</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">1</span>)
+139:                                                         <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+140:                                                 <span class="ruby-keyword kw">end</span>
+141:                                         <span class="ruby-keyword kw">end</span>
+142:                                         
+143:                                         <span class="ruby-comment cmt">#もしも得られた距離が和音の5度圏の長さの半分より大きければ，</span>
+144:                                         <span class="ruby-comment cmt">#反時計回りに探索した方が早かった事になるので，反時計回りの距離に修正する</span>
+145:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">counter</span> <span class="ruby-operator">&gt;</span> (<span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2.0</span>) <span class="ruby-keyword kw">then</span>
+146:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-ivar">@chordcircle_b</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">counter</span>
+147:                                         <span class="ruby-keyword kw">end</span>
+148:                                         
+149:                                         <span class="ruby-comment cmt">#和音の5度圏からピヴォットコードとしての場合，外に伸びた枝の分を追加する</span>
+150:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pivot_a</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">then</span>
+151:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+152:                                         <span class="ruby-keyword kw">end</span>
+153:                                         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pivot_b</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">then</span>
+154:                                                 <span class="ruby-identifier">counter</span> = <span class="ruby-identifier">counter</span> <span class="ruby-value">1</span>
+155:                                         <span class="ruby-keyword kw">end</span>
+156:                                         
+157:                                         <span class="ruby-comment cmt">#得られた距離を結果格納Arrayにプッシュする</span>
+158:                                         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">counter</span>)
+159:                                 
+160:                                 <span class="ruby-keyword kw">else</span>
+161:                                         <span class="ruby-comment cmt">#見つからなかった→chord距離算出不可</span>
+162:                                         <span class="ruby-comment cmt">#十分に大きな値を結果としてプッシュする</span>
+163:                                         <span class="ruby-identifier">result</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">CHORD_DISTANCE_UNMEASURABLE</span>)
+164:                                 <span class="ruby-keyword kw">end</span>
+165:                         <span class="ruby-keyword kw">end</span>
+166:                 <span class="ruby-keyword kw">end</span>
+167:                 
+168:                 <span class="ruby-comment cmt">#結果格納用Arrayのうち，最小のものを出力する</span>
+169:                 <span class="ruby-identifier">minimum</span> = <span class="ruby-identifier">result</span>[<span class="ruby-value">0</span>]           <span class="ruby-comment cmt">#初期値として先頭を代入</span>
+170:                 <span class="ruby-identifier">result</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+171:                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">minimum</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">then</span>
+172:                                 <span class="ruby-identifier">minimum</span> = <span class="ruby-identifier">i</span>
+173:                         <span class="ruby-keyword kw">end</span>
+174:                 <span class="ruby-keyword kw">end</span>
+175:                 
+176:                 <span class="ruby-ivar">@delta</span> = <span class="ruby-identifier">minimum</span>
+177:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@delta</span>
+178:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-last-delta-method" class="method-detail ">
+				<a name="method-i-get_last_delta"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_last_delta</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+最後に求めたChord距離を返す
+</p>
+<h2>戻り値</h2>
+<p>
+距離(Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-last-delta-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord_calculator/Chord_calculator.rb, line 317</span>
+317:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_last_delta</span>()
+318:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@delta</span>
+319:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+p method対応
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord_calculator/Chord_calculator.rb, line 322</span>
+322:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+323:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;chord(&quot;</span>
+324:                 <span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">inspect</span>
+325:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;,&quot;</span>
+326:                 <span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">inspect</span>
+327:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;)\n&quot;</span>
+328:                 
+329:                 <span class="ruby-identifier">print</span><span class="ruby-value str">&quot;chordciecle chord_a = &quot;</span>
+330:                 <span class="ruby-identifier">p</span> <span class="ruby-ivar">@chordcircle_a</span>
+331:                 <span class="ruby-identifier">print</span><span class="ruby-value str">&quot;chordciecle chord_b = &quot;</span>
+332:                 <span class="ruby-identifier">p</span> <span class="ruby-ivar">@chordcircle_b</span>
+333:                 
+334:                 <span class="ruby-identifier">print</span><span class="ruby-value str">&quot;pivot chord_a = &quot;</span>
+335:                 <span class="ruby-identifier">p</span> <span class="ruby-ivar">@pivot_a</span>
+336:                 <span class="ruby-identifier">print</span><span class="ruby-value str">&quot;pivot chord_b = &quot;</span>
+337:                 <span class="ruby-identifier">p</span> <span class="ruby-ivar">@pivot_b</span>
+338:                 
+339:                 <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+340:         
+341:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="make-chordcircle-method" class="method-detail ">
+				<a name="method-i-make_chordcircle"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">make_chordcircle</span><span
+						class="method-args">(root,is_minor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+5度圏を浮ｷ配列を生成する
+</p>
+<h2>引数</h2>
+<dl>
+<dt>root</dt><dd><p>
+調のルート音(Int)
+</p>
+</dd>
+<dt>is_minor</dt><dd><p>
+長調/短調フラグ(Boolean)【True->短調,False->長調】 
+</p>
+</dd>
+</dl>
+<h2>戻り値</h2>
+<p>
+5度圏（Array)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="make-chordcircle-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord_calculator/Chord_calculator.rb, line 186</span>
+186:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">make_chordcircle</span>(<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+187:                 <span class="ruby-identifier">chordcircle</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+188:                 
+189:                 
+190:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_minor</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">then</span>
+191:                         <span class="ruby-comment cmt">#長調のとき</span>
+192:                         <span class="ruby-comment cmt">#このルックアップテーブルは『コード進行スタイルブック』p.182に基づく．</span>
+193:                         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">root</span>
+194:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">0</span>
+195:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;C&quot;</span>,<span class="ruby-value str">&quot;E m&quot;</span>,<span class="ruby-value str">&quot;G&quot;</span>,<span class="ruby-value str">&quot;B m -5&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-value str">&quot;F&quot;</span>,<span class="ruby-value str">&quot;A m&quot;</span>]
+196:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span>
+197:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Db&quot;</span>,<span class="ruby-value str">&quot;F m&quot;</span>,<span class="ruby-value str">&quot;Ab&quot;</span>,<span class="ruby-value str">&quot;C m -5&quot;</span>,<span class="ruby-value str">&quot;Eb m&quot;</span>,<span class="ruby-value str">&quot;Gb&quot;</span>,<span class="ruby-value str">&quot;Bb m&quot;</span>]
+198:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">2</span>
+199:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;D&quot;</span>,<span class="ruby-node">&quot;F# m&quot;</span>,<span class="ruby-value str">&quot;A&quot;</span>,<span class="ruby-node">&quot;C# m -5&quot;</span>,<span class="ruby-value str">&quot;E m&quot;</span>,<span class="ruby-value str">&quot;G&quot;</span>,<span class="ruby-value str">&quot;B m&quot;</span>]
+200:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">3</span>
+201:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Eb&quot;</span>,<span class="ruby-value str">&quot;G m&quot;</span>,<span class="ruby-value str">&quot;Bb&quot;</span>,<span class="ruby-value str">&quot;D m -5&quot;</span>,<span class="ruby-value str">&quot;F m&quot;</span>,<span class="ruby-value str">&quot;Ab&quot;</span>,<span class="ruby-value str">&quot;C m&quot;</span>]
+202:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">4</span>
+203:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;E&quot;</span>,<span class="ruby-node">&quot;G# m&quot;</span>,<span class="ruby-value str">&quot;B&quot;</span>,<span class="ruby-node">&quot;D# m -5&quot;</span>,<span class="ruby-node">&quot;F# m&quot;</span>,<span class="ruby-value str">&quot;A&quot;</span>,<span class="ruby-node">&quot;C# m&quot;</span>]
+204:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">5</span>
+205:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;F&quot;</span>,<span class="ruby-value str">&quot;A m&quot;</span>,<span class="ruby-value str">&quot;C&quot;</span>,<span class="ruby-value str">&quot;E m -5&quot;</span>,<span class="ruby-value str">&quot;G m&quot;</span>,<span class="ruby-value str">&quot;Bb&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>]
+206:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">6</span>
+207:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Gb&quot;</span>,<span class="ruby-value str">&quot;Bb m&quot;</span>,<span class="ruby-value str">&quot;Db&quot;</span>,<span class="ruby-value str">&quot;F m -5&quot;</span>,<span class="ruby-value str">&quot;Ab m&quot;</span>,<span class="ruby-value str">&quot;B&quot;</span>,<span class="ruby-value str">&quot;Eb m&quot;</span>]
+208:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">7</span>
+209:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;G&quot;</span>,<span class="ruby-value str">&quot;B m&quot;</span>,<span class="ruby-value str">&quot;D&quot;</span>,<span class="ruby-node">&quot;F# m -5&quot;</span>,<span class="ruby-value str">&quot;A m&quot;</span>,<span class="ruby-value str">&quot;C&quot;</span>,<span class="ruby-value str">&quot;E m&quot;</span>]
+210:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">8</span>
+211:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Ab&quot;</span>,<span class="ruby-value str">&quot;C m&quot;</span>,<span class="ruby-value str">&quot;Eb&quot;</span>,<span class="ruby-value str">&quot;G m -5&quot;</span>,<span class="ruby-value str">&quot;Bb m&quot;</span>,<span class="ruby-value str">&quot;Db&quot;</span>,<span class="ruby-value str">&quot;F m&quot;</span>]
+212:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">9</span>
+213:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;A&quot;</span>,<span class="ruby-node">&quot;C# m&quot;</span>,<span class="ruby-value str">&quot;E&quot;</span>,<span class="ruby-node">&quot;G# m -5&quot;</span>,<span class="ruby-value str">&quot;B m&quot;</span>,<span class="ruby-value str">&quot;D&quot;</span>,<span class="ruby-node">&quot;F# m&quot;</span>]
+214:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">10</span>
+215:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Bb&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-value str">&quot;F&quot;</span>,<span class="ruby-value str">&quot;A m -5&quot;</span>,<span class="ruby-value str">&quot;C m&quot;</span>,<span class="ruby-value str">&quot;Eb&quot;</span>,<span class="ruby-value str">&quot;G m&quot;</span>]
+216:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">11</span>
+217:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;B&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-node">&quot;F#&quot;</span>,<span class="ruby-node">&quot;A# m -5&quot;</span>,<span class="ruby-node">&quot;C# m&quot;</span>,<span class="ruby-value str">&quot;E&quot;</span>,<span class="ruby-node">&quot;G# m&quot;</span>]
+218:                         <span class="ruby-keyword kw">end</span>
+219:                 <span class="ruby-keyword kw">else</span>
+220:                         <span class="ruby-comment cmt">#短調の時</span>
+221:                         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">root</span>
+222:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">0</span>
+223:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;C m&quot;</span>,<span class="ruby-value str">&quot;Eb&quot;</span>,<span class="ruby-value str">&quot;G m&quot;</span>,<span class="ruby-value str">&quot;Bb&quot;</span>,<span class="ruby-value str">&quot;D m -5&quot;</span>,<span class="ruby-value str">&quot;F m&quot;</span>,<span class="ruby-value str">&quot;Ab&quot;</span>]
+224:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">1</span>
+225:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-node">&quot;C# m&quot;</span>,<span class="ruby-value str">&quot;E&quot;</span>,<span class="ruby-node">&quot;G# m&quot;</span>,<span class="ruby-value str">&quot;B&quot;</span>,<span class="ruby-node">&quot;D# m -5&quot;</span>,<span class="ruby-node">&quot;F# m&quot;</span>,<span class="ruby-value str">&quot;A&quot;</span>]
+226:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">2</span>
+227:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-value str">&quot;F&quot;</span>,<span class="ruby-value str">&quot;A m&quot;</span>,<span class="ruby-value str">&quot;C&quot;</span>,<span class="ruby-value str">&quot;E m -5&quot;</span>,<span class="ruby-value str">&quot;G m&quot;</span>,<span class="ruby-value str">&quot;Bb&quot;</span>]
+228:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">3</span>
+229:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Eb m&quot;</span>,<span class="ruby-value str">&quot;Gb&quot;</span>,<span class="ruby-value str">&quot;Bb m&quot;</span>,<span class="ruby-value str">&quot;Db&quot;</span>,<span class="ruby-value str">&quot;F m -5&quot;</span>,<span class="ruby-value str">&quot;Ab m&quot;</span>,<span class="ruby-value str">&quot;B&quot;</span>]
+230:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">4</span>
+231:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Eb m&quot;</span>,<span class="ruby-value str">&quot;G&quot;</span>,<span class="ruby-value str">&quot;B m&quot;</span>,<span class="ruby-value str">&quot;D&quot;</span>,<span class="ruby-node">&quot;F# m -5&quot;</span>,<span class="ruby-value str">&quot;A m&quot;</span>,<span class="ruby-value str">&quot;C&quot;</span>]
+232:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">5</span>
+233:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;F m&quot;</span>,<span class="ruby-value str">&quot;Ab&quot;</span>,<span class="ruby-value str">&quot;C m&quot;</span>,<span class="ruby-value str">&quot;Eb&quot;</span>,<span class="ruby-value str">&quot;G m -5&quot;</span>,<span class="ruby-value str">&quot;Bb m&quot;</span>,<span class="ruby-value str">&quot;Db&quot;</span>]
+234:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">6</span>
+235:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-node">&quot;F# m&quot;</span>,<span class="ruby-value str">&quot;A&quot;</span>,<span class="ruby-node">&quot;C# m&quot;</span>,<span class="ruby-value str">&quot;E&quot;</span>,<span class="ruby-node">&quot;G# m -5&quot;</span>,<span class="ruby-value str">&quot;B m&quot;</span>,<span class="ruby-value str">&quot;D&quot;</span>]
+236:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">7</span>
+237:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;G m&quot;</span>,<span class="ruby-value str">&quot;Bb&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-value str">&quot;F&quot;</span>,<span class="ruby-value str">&quot;A m -5&quot;</span>,<span class="ruby-value str">&quot;C m&quot;</span>,<span class="ruby-value str">&quot;Eb&quot;</span>]
+238:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">8</span>
+239:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-node">&quot;G# m&quot;</span>,<span class="ruby-value str">&quot;B&quot;</span>,<span class="ruby-node">&quot;D# m&quot;</span>,<span class="ruby-node">&quot;F#&quot;</span>,<span class="ruby-node">&quot;A# m -5&quot;</span>,<span class="ruby-node">&quot;C# m&quot;</span>,<span class="ruby-value str">&quot;E&quot;</span>]
+240:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">9</span>
+241:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;A m&quot;</span>,<span class="ruby-value str">&quot;C&quot;</span>,<span class="ruby-value str">&quot;E m&quot;</span>,<span class="ruby-value str">&quot;G&quot;</span>,<span class="ruby-value str">&quot;B m -5&quot;</span>,<span class="ruby-value str">&quot;D m&quot;</span>,<span class="ruby-value str">&quot;F&quot;</span>]
+242:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">10</span>
+243:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;Bb m&quot;</span>,<span class="ruby-value str">&quot;Db&quot;</span>,<span class="ruby-value str">&quot;F m&quot;</span>,<span class="ruby-value str">&quot;Ab&quot;</span>,<span class="ruby-value str">&quot;C m -5&quot;</span>,<span class="ruby-value str">&quot;Eb m&quot;</span>,<span class="ruby-value str">&quot;Gb&quot;</span>]
+244:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-value">11</span>
+245:                                         <span class="ruby-identifier">chordcircle</span>= <span class="ruby-constant">Array</span>[<span class="ruby-value str">&quot;B m&quot;</span>,<span class="ruby-value str">&quot;D&quot;</span>,<span class="ruby-node">&quot;F# m&quot;</span>,<span class="ruby-value str">&quot;A&quot;</span>,<span class="ruby-node">&quot;C# m -5&quot;</span>,<span class="ruby-value str">&quot;E m&quot;</span>,<span class="ruby-value str">&quot;G&quot;</span>]
+246:                         <span class="ruby-keyword kw">end</span>
+247:                 <span class="ruby-keyword kw">end</span>
+248:                 <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">chordcircle</span>
+249:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="pickup-pivotlist-method" class="method-detail ">
+				<a name="method-i-pickup_pivotlist"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">pickup_pivotlist</span><span
+						class="method-args">(chord)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+和音の5度圏の中から，ベーシックスペース距離が最も近い和音（ピヴォット）候補配列を求める
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chord</dt><dd><p>
+ピヴォットを求めるコード(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+</dl>
+<h2>戻り値</h2>
+<p>
+ピヴォット候補配列（Array)（戻り値pivot[0]はピヴォット候補コード名リスト，pivot[1]はピヴォットが必要か否かのフラグ）
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="pickup-pivotlist-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord_calculator/Chord_calculator.rb, line 257</span>
+257:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">pickup_pivotlist</span>(<span class="ruby-identifier">chord</span>)
+258:                 <span class="ruby-comment cmt">#chordのchord circleの中でchordのコードネームを探索する．</span>
+259:                 <span class="ruby-comment cmt">#chordの置かれた調に対応するchordcircleを生成</span>
+260:                 <span class="ruby-identifier">chordcircle</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+261:                 <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">make_chordcircle</span>(<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">get_minorflag</span>())
+262:                 <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>]  = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>()
+263:                 
+264:                 <span class="ruby-comment cmt">#ピヴォット候補格納配列の生成</span>
+265:                 <span class="ruby-comment cmt">#ピヴォット候補は複数ある可能性があるので配列形式</span>
+266:                 <span class="ruby-identifier">pivot</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+267: 
+268:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">getchordname</span>()) <span class="ruby-operator">==</span> <span class="ruby-keyword kw">true</span> <span class="ruby-keyword kw">then</span>
+269:                         <span class="ruby-comment cmt">#chord circleにコードネームが含まれている</span>
+270:                         <span class="ruby-comment cmt">#ピヴォットはいらない．そのままコード名を格納する．</span>
+271:                         
+272:                         <span class="ruby-identifier">need_pivot_flag</span> = <span class="ruby-keyword kw">false</span>
+273:                         <span class="ruby-identifier">pivot</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">getchordname</span>()
+274:                         
+275:                 <span class="ruby-keyword kw">else</span>
+276:                         <span class="ruby-comment cmt">#chord circleにコードネームが含まれていない</span>
+277:                         <span class="ruby-comment cmt">#basicspace関数を使ってピヴォットコードを探す．</span>
+278:                         
+279:                         <span class="ruby-identifier">need_pivot_flag</span> = <span class="ruby-keyword kw">true</span>
+280:                         
+281:                         <span class="ruby-comment cmt">#ベーシックスペース算出クラス生成</span>
+282:                         <span class="ruby-identifier">bcalc</span> = <span class="ruby-constant">Basicspace_calculator</span>.<span class="ruby-identifier">new</span>()
+283:                         <span class="ruby-comment cmt">#全てのダイアトニックコードとaのコードのベーシックスペース距離を算出する</span>
+284:                         <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+285:                                 <span class="ruby-comment cmt">#比較対象コードを取り出してChordクラスを生成</span>
+286:                                 <span class="ruby-identifier">diatonic</span> = <span class="ruby-constant">Chord</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">0</span>][<span class="ruby-identifier">i</span>])
+287:                                 <span class="ruby-identifier">diatonic</span>.<span class="ruby-identifier">setkey</span>(<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">get_minorflag</span>())
+288:                                 
+289:                                 <span class="ruby-comment cmt">#ベーシックスペース距離を算出して格納</span>
+290:                                 <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>][<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">bcalc</span>.<span class="ruby-identifier">calc_basicspace</span>(<span class="ruby-identifier">diatonic</span>,<span class="ruby-identifier">chord</span>)
+291:                         <span class="ruby-keyword kw">end</span>
+292:                         
+293:                         <span class="ruby-comment cmt">#ベーシックスペース距離の最小値を求める</span>
+294:                         <span class="ruby-identifier">minimum</span> = <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>][<span class="ruby-value">0</span>]          <span class="ruby-comment cmt">#初期値として先頭をベーシックスペース距離を代入</span>
+295:                         <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+296:                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">minimum</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>][<span class="ruby-identifier">i</span>] <span class="ruby-keyword kw">then</span>
+297:                                         <span class="ruby-identifier">minimum</span> = <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>][<span class="ruby-identifier">i</span>]
+298:                                 <span class="ruby-keyword kw">end</span>
+299:                         <span class="ruby-keyword kw">end</span>
+300:                         
+301:                         <span class="ruby-comment cmt">#最小値の距離を持ったダイアトニックコード名をピヴォット候補として取り出す</span>
+302:                         <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+303:                         
+304:                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">1</span>][<span class="ruby-identifier">i</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">minimum</span> <span class="ruby-keyword kw">then</span>
+305:                                         <span class="ruby-identifier">pivot</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">chordcircle</span>[<span class="ruby-value">0</span>][<span class="ruby-identifier">i</span>])
+306:                                 <span class="ruby-keyword kw">end</span>
+307:                         <span class="ruby-keyword kw">end</span>
+308:                 <span class="ruby-keyword kw">end</span>
+309:                 
+310:                 <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Array</span>[<span class="ruby-identifier">pivot</span>,<span class="ruby-identifier">need_pivot_flag</span>]
+311:         
+312:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

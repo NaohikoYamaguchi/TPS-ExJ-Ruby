@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Chord</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Chord/Chord_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Chord/Chord.rb">Chord/Chord.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-get_minorflag">#get_minorflag</a></li>
+					
+					<li><a href="#method-i-getchordname">#getchordname</a></li>
+					
+					<li><a href="#method-i-getkeyname">#getkeyname</a></li>
+					
+					<li><a href="#method-i-getroot">#getroot</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+					<li><a href="#method-i-setchordname">#setchordname</a></li>
+					
+					<li><a href="#method-i-setkey">#setkey</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Chord</h1>
+
+		<div id="description">
+			<p>
+コード クラス
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>@chordnaame</dt><dd><p>
+コードネーム(String)【必須】
+</p>
+</dd>
+<dt>@root</dt><dd><p>
+調のルート(Int)
+</p>
+</dd>
+<dt>@is_minor</dt><dd><p>
+長調/短調フラグ(Boolean)【True->短調,False->長調】
+</p>
+</dd>
+</dl>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(chordname)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+コンストラクタ
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chordname</dt><dd><p>
+コードネーム(String)
+</p>
+</dd>
+</dl>
+<h2>動作</h2>
+<ul>
+<li><p>
+コードネームを設定し、クラスの初期化を行う。
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File Chord/Chord.rb, line 26</span>
+26:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">chordname</span>)
+27:                 <span class="ruby-comment cmt"># コードネームの設定</span>
+28:                 <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">setchordname</span>(<span class="ruby-identifier">chordname</span>)
+29:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="get-minorflag-method" class="method-detail ">
+				<a name="method-i-get_minorflag"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_minorflag</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+長調/短調フラグを返す
+</p>
+<h2>戻り値</h2>
+<p>
+長調/短調フラグ（Boolean)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-minorflag-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord/Chord.rb, line 110</span>
+110:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_minorflag</span>()
+111:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@is_minor</span>
+112:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="getchordname-method" class="method-detail ">
+				<a name="method-i-getchordname"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getchordname</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+コードネームを返す
+</p>
+<h2>戻り値</h2>
+<p>
+コードネーム（String)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="getchordname-source">
+<pre>
+    <span class="ruby-comment cmt"># File Chord/Chord.rb, line 89</span>
+89:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getchordname</span>()
+90:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@chordname</span>
+91:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="getkeyname-method" class="method-detail ">
+				<a name="method-i-getkeyname"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getkeyname</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+調名を返す
+</p>
+<h2>戻り値</h2>
+<p>
+調名（String)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="getkeyname-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord/Chord.rb, line 96</span>
+ 96:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getkeyname</span>()
+ 97:                 <span class="ruby-identifier">buf</span> = <span class="ruby-constant">Pitchclass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@root</span>)
+ 98:                 <span class="ruby-identifier">keyname</span> = <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">getname</span>
+ 99:                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@is_minor</span> <span class="ruby-keyword kw">then</span>
+100:                         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keyname</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; minor&quot;</span>
+101:                 <span class="ruby-keyword kw">else</span>
+102:                         <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keyname</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; major&quot;</span>
+103:                 <span class="ruby-keyword kw">end</span>
+104:                 
+105:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="getroot-method" class="method-detail ">
+				<a name="method-i-getroot"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">getroot</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+調のルートを返す
+</p>
+<h2>戻り値</h2>
+<p>
+ルート（Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="getroot-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord/Chord.rb, line 117</span>
+117:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">getroot</span>()
+118:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@root</span>
+119:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+p method 対応
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+     <span class="ruby-comment cmt"># File Chord/Chord.rb, line 123</span>
+123:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+124:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;[&quot;</span>,<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">getchordname</span>,<span class="ruby-value str">&quot;]&quot;</span>
+125:                 <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@root</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">then</span>
+126:                         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot; in &quot;</span>, <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">getkeyname</span>
+127:                 <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+128:                 <span class="ruby-keyword kw">end</span>
+129:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setchordname-method" class="method-detail ">
+				<a name="method-i-setchordname"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setchordname</span><span
+						class="method-args">(chordname)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+コードネームの設定
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chordname</dt><dd><p>
+コードネーム(String)
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="setchordname-source">
+<pre>
+    <span class="ruby-comment cmt"># File Chord/Chord.rb, line 34</span>
+34:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setchordname</span>(<span class="ruby-identifier">chordname</span>)
+35:                 <span class="ruby-ivar">@chordname</span> = <span class="ruby-identifier">chordname</span>
+36:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setkey-method" class="method-detail ">
+				<a name="method-i-setkey"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setkey</span><span
+						class="method-args">(root,is_minor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+調を設定する。
+</p>
+<ul>
+<li><p>
+引数のうちいずれかがnilならば設定を削除する
+</p>
+</li>
+<li><p>
+引数が2つ指定されていれば、調ルート音と長調・短調を設定する
+</p>
+</li>
+</ul>
+<h2>引数</h2>
+<dl>
+<dt>root</dt><dd><p>
+調のルート(数字もしくは文字指定)
+</p>
+</dd>
+<dt>is_minor</dt><dd><p>
+長調/短調フラグ(True->短調,False->長調)
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="setkey-source">
+<pre>
+    <span class="ruby-comment cmt"># File Chord/Chord.rb, line 45</span>
+45:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setkey</span>(<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+46:                 <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">root</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>) <span class="ruby-operator">||</span> (<span class="ruby-identifier">is_minor</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>) <span class="ruby-keyword kw">then</span>
+47:                         <span class="ruby-comment cmt">#引数のいずれかがnilなら設定を削除</span>
+48:                         <span class="ruby-ivar">@root</span> = <span class="ruby-keyword kw">nil</span>
+49:                         <span class="ruby-ivar">@is_minor</span> = <span class="ruby-keyword kw">nil</span>
+50:                 <span class="ruby-keyword kw">else</span>
+51:                         
+52:                         <span class="ruby-comment cmt">#ルートの設定</span>
+53:                         <span class="ruby-comment cmt">#文字による指定と数字による指定に対応</span>
+54:                         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">root</span>
+55:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-constant">String</span>
+56:                                         <span class="ruby-comment cmt">#文字（音名）による指定</span>
+57:                                         <span class="ruby-identifier">buf</span> = <span class="ruby-constant">Pitchclass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">root</span>)
+58:                                         <span class="ruby-ivar">@root</span> = <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">get</span>
+59:                                 <span class="ruby-keyword kw">when</span> <span class="ruby-constant">Integer</span>
+60:                                         <span class="ruby-comment cmt">#数字による指定</span>
+61:                                         <span class="ruby-keyword kw">if</span> (<span class="ruby-value">0</span><span class="ruby-operator">&lt;=</span><span class="ruby-identifier">root</span>) <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">root</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">11</span>) <span class="ruby-keyword kw">then</span>
+62:                                                 <span class="ruby-ivar">@root</span> = <span class="ruby-identifier">root</span>
+63:                                         <span class="ruby-keyword kw">else</span>
+64:                                                 <span class="ruby-comment cmt">#範囲異常</span>
+65:                                                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>
+66:                                         <span class="ruby-keyword kw">end</span>
+67:                                 <span class="ruby-keyword kw">else</span>
+68:                                         <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>
+69:                         <span class="ruby-keyword kw">end</span>
+70:                         
+71:                         <span class="ruby-comment cmt">#長調/短調フラグの設定</span>
+72:                         <span class="ruby-keyword kw">case</span> <span class="ruby-identifier">is_minor</span>
+73:                         <span class="ruby-keyword kw">when</span> <span class="ruby-constant">TrueClass</span>
+74:                                 <span class="ruby-ivar">@is_minor</span>= <span class="ruby-keyword kw">true</span>
+75:                         <span class="ruby-keyword kw">when</span> <span class="ruby-constant">FalseClass</span>
+76:                                 <span class="ruby-ivar">@is_minor</span>= <span class="ruby-keyword kw">false</span>
+77:                         <span class="ruby-keyword kw">else</span>
+78:                                 <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>
+79:                         <span class="ruby-keyword kw">end</span>
+80:                 <span class="ruby-keyword kw">end</span>
+81:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Basicspace</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Basicspace/Basicspace_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Basicspace/Basicspace.rb">Basicspace/Basicspace.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-genbs">#genbs</a></li>
+					
+					<li><a href="#method-i-genbs_chordstructnote">#genbs_chordstructnote</a></li>
+					
+					<li><a href="#method-i-genbs_keyconstructnote">#genbs_keyconstructnote</a></li>
+					
+					<li><a href="#method-i-get_bs">#get_bs</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Basicspace</h1>
+
+		<div id="description">
+			<p>
+<a href="Basicspace.html">Basicspace</a>
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>@bs</dt><dd><p>
+ベーシックスペース(Array)
+</p>
+</dd>
+</dl>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(chordname,root,is_minor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+コンストラクタ
+</p>
+<h1>引数</h1>
+<dl>
+<dt>chordname</dt><dd><p>
+コードネーム(String)
+</p>
+</dd>
+<dt>root</dt><dd><p>
+調のルート(Int)
+</p>
+</dd>
+<dt>is_minor</dt><dd><p>
+長調/短調フラグ(True->短調,False->長調)(Boolean)
+</p>
+</dd>
+</dl>
+<h1>動作</h1>
+<p>
+*ベーシックスペースの生成
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 22</span>
+22:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">chordname</span>,<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+23:                 
+24:                 <span class="ruby-comment cmt">#ベーシックスペースの生成</span>
+25:                 <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">genbs</span>(<span class="ruby-identifier">chordname</span>,<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+26:                 
+27:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="genbs-method" class="method-detail ">
+				<a name="method-i-genbs"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">genbs</span><span
+						class="method-args">(chordname,root,is_minor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ベーシックスペースを生成する
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chordname</dt><dd><p>
+コードネーム(String)
+</p>
+</dd>
+<dt>root</dt><dd><p>
+調のルート(Int)
+</p>
+</dd>
+<dt>is_minor</dt><dd><p>
+長調/短調フラグ(True->短調,False->長調)(Boolean)
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="genbs-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 34</span>
+34:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">genbs</span>(<span class="ruby-identifier">chordname</span>,<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+35:                 <span class="ruby-comment cmt">#配列の初期化</span>
+36:                 <span class="ruby-comment cmt">#初期値はすべて1</span>
+37:                 <span class="ruby-ivar">@bs</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">12</span>,<span class="ruby-value">1</span>)
+38:                 
+39:                 <span class="ruby-comment cmt">#調構成音の重みを1レベル増やす</span>
+40:                 <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">genbs_keyconstructnote</span>(<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+41:                 
+42:                 <span class="ruby-comment cmt">#コードネームから和音を構成する</span>
+43:                 <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">genbs_chordstructnote</span>(<span class="ruby-identifier">chordname</span>)
+44:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="genbs-chordstructnote-method" class="method-detail ">
+				<a name="method-i-genbs_chordstructnote"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">genbs_chordstructnote</span><span
+						class="method-args">(chordname)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ベーシックスペースの和音告ｬ音レベルを決定
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chordname</dt><dd><p>
+コードネーム(String)
+</p>
+</dd>
+</dl>
+<h2>コードネームパーサに対する注意</h2>
+<p>
+このコードネームパーサは暫定版であり，以下の制約を持つ．
+*ルート音，各コードネームを告ｬする部品は半角スペースで区切る必要がある(例:&#8220;Cm7-5&#8221;->&#8220;C
+m 7 -5&#8221;) *コードネームの文法誤りについては考慮していない
+</p>
+<h2>対応するコードネーム</h2>
+<p>
+現在，以下に示すコードネームに対応している．(@はコードの主音）
+</p>
+<dl>
+<dt>@</dt><dd><p>
+メジャーコード
+</p>
+</dd>
+<dt>@m</dt><dd><p>
+マイナーコード
+</p>
+</dd>
+<dt>@maj7</dt><dd><p>
+メジャー・セブンス
+</p>
+</dd>
+<dt>@mmaj7</dt><dd><p>
+マイナー・メジャー・セブンス
+</p>
+</dd>
+<dt>@aug</dt><dd><p>
+オーギュメント(増5度)
+</p>
+</dd>
+<dt>@-5</dt><dd><p>
+(altと同じ意味)フラットファイブ(減5度)
+</p>
+</dd>
+<dt>@alt</dt><dd><p>
+(-5と同じ意味)アルタード(減5度)
+</p>
+</dd>
+<dt>@7</dt><dd><p>
+セブンス
+</p>
+</dd>
+<dt>@m7</dt><dd><p>
+マイナー・セブンス
+</p>
+</dd>
+<dt>@aug7</dt><dd><p>
+オーギュメント・セブンス
+</p>
+</dd>
+<dt>@7-5</dt><dd><p>
+アルタード・セブンス
+</p>
+</dd>
+<dt>@dim</dt><dd><p>
+ディミニッシュ(ここではクラシック音楽理論風に三和音として定義)
+</p>
+</dd>
+<dt>@m7-5</dt><dd><p>
+マイナーセブン・フラッテッドファイブ
+</p>
+</dd>
+<dt>@dim(M7)</dt><dd><p>
+ディミニッシュド・メジャーセブンス
+</p>
+</dd>
+<dt>@sus4</dt><dd><p>
+サスペンデッド・フォー
+</p>
+</dd>
+<dt>@7sus4</dt><dd><p>
+セブンス・サスペンデッド・フォー
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="genbs-chordstructnote-source">
+<pre>
+     <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 127</span>
+127:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">genbs_chordstructnote</span>(<span class="ruby-identifier">chordname</span>)
+128:                 <span class="ruby-comment cmt">#暫定版</span>
+129:                 <span class="ruby-identifier">chord</span> = <span class="ruby-identifier">chordname</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">&quot; &quot;</span>)
+130:                 
+131:                 <span class="ruby-comment cmt">#ルート音</span>
+132:                 <span class="ruby-identifier">buf</span> = <span class="ruby-constant">Pitchclass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">chord</span>[<span class="ruby-value">0</span>])
+133:                 <span class="ruby-identifier">rootpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">buf</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+134:                 <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+135:                 <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">6</span>
+136:                 
+137:                 <span class="ruby-comment cmt">#第3音と第5音がセットされたかどうかのフラグ</span>
+138:                 <span class="ruby-identifier">setno3</span> = <span class="ruby-keyword kw">false</span>
+139:                 <span class="ruby-identifier">setno5</span> = <span class="ruby-keyword kw">false</span>
+140:                 
+141:                 <span class="ruby-comment cmt">#mの場合</span>
+142:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>[<span class="ruby-value">1</span>]<span class="ruby-operator">==</span><span class="ruby-value str">&quot;m&quot;</span> <span class="ruby-keyword kw">then</span>
+143:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+144:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">3</span>)
+145:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">4</span>
+146:                         <span class="ruby-identifier">setno3</span> = <span class="ruby-keyword kw">true</span>
+147:                         
+148:                 <span class="ruby-keyword kw">end</span>
+149:                 
+150:                 <span class="ruby-comment cmt">#dimの場合</span>
+151:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>[<span class="ruby-value">1</span>]<span class="ruby-operator">==</span><span class="ruby-value str">&quot;dim&quot;</span> <span class="ruby-keyword kw">then</span>
+152:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+153:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">3</span>)
+154:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">4</span>
+155:                         <span class="ruby-identifier">setno3</span> = <span class="ruby-keyword kw">true</span>
+156:                         
+157:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+158:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">6</span>)
+159:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">5</span>
+160:                         <span class="ruby-identifier">setno5</span> = <span class="ruby-keyword kw">true</span>
+161:                         
+162:                         <span class="ruby-comment cmt">#クラシック音楽の記法に合わせてdimは三和音とする．</span>
+163:                         <span class="ruby-comment cmt">#以下のコメントを外せば4和音となる</span>
+164:                         <span class="ruby-comment cmt">#nowpc=Modint.new(rootpc.get,12)</span>
+165:                         <span class="ruby-comment cmt">#nowpc.add(9)</span>
+166:                         <span class="ruby-comment cmt">#@bs[nowpc.get]=3</span>
+167:                 <span class="ruby-keyword kw">end</span>
+168:                 
+169:                 <span class="ruby-comment cmt">#augがある場合</span>
+170:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;aug&quot;</span>) <span class="ruby-keyword kw">then</span>
+171:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+172:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">8</span>)
+173:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">5</span>
+174:                         <span class="ruby-identifier">setno5</span> = <span class="ruby-keyword kw">true</span>
+175:                 <span class="ruby-keyword kw">end</span>
+176:                 
+177:                 <span class="ruby-comment cmt">#-5がある場合</span>
+178:                 <span class="ruby-keyword kw">if</span> (<span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;-5&quot;</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;alt&quot;</span>)) <span class="ruby-keyword kw">then</span>
+179:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+180:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">6</span>)
+181:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">5</span>
+182:                         <span class="ruby-identifier">setno5</span> = <span class="ruby-keyword kw">true</span>
+183:                 <span class="ruby-keyword kw">end</span>
+184:                 
+185:                 <span class="ruby-comment cmt">#sus4がある場合</span>
+186:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;sus4&quot;</span>) <span class="ruby-keyword kw">then</span>
+187:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+188:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">5</span>)
+189:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">4</span>
+190:                         <span class="ruby-identifier">setno3</span> = <span class="ruby-keyword kw">true</span>
+191:                 <span class="ruby-keyword kw">end</span>
+192:                 
+193:                 <span class="ruby-comment cmt">#7thがある場合</span>
+194:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;7&quot;</span>) <span class="ruby-keyword kw">then</span>
+195:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+196:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">10</span>)
+197:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">3</span>
+198:                 <span class="ruby-keyword kw">end</span>
+199:                 
+200:                 <span class="ruby-comment cmt">#maj7thがある場合</span>
+201:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chord</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value str">&quot;maj7&quot;</span>) <span class="ruby-keyword kw">then</span>
+202:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+203:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">11</span>)
+204:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">3</span>
+205:                 <span class="ruby-keyword kw">end</span>
+206: 
+207: 
+208:                 
+209:                 <span class="ruby-comment cmt">#第3音がセットされているかどうか確認</span>
+210:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">setno3</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">then</span>
+211:                         <span class="ruby-comment cmt">#セットされていなければ標準の値（ルートから長3度）をセット</span>
+212:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+213:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">4</span>)
+214:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">4</span>
+215:                         <span class="ruby-identifier">setno3</span> = <span class="ruby-keyword kw">true</span>
+216:                 <span class="ruby-keyword kw">end</span>
+217:                 
+218:                 <span class="ruby-comment cmt">#第5音がセットされているかどうか確認</span>
+219:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">setno5</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">false</span> <span class="ruby-keyword kw">then</span>
+220:                         <span class="ruby-comment cmt">#セットされていなければ標準の値（ルートから完全5度）をセット</span>
+221:                         <span class="ruby-identifier">nowpc</span>=<span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">rootpc</span>.<span class="ruby-identifier">get</span>,<span class="ruby-value">12</span>)
+222:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">7</span>)
+223:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-value">5</span>
+224:                         <span class="ruby-identifier">setno5</span> = <span class="ruby-keyword kw">true</span>
+225:                 <span class="ruby-keyword kw">end</span>
+226: 
+227:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="genbs-keyconstructnote-method" class="method-detail ">
+				<a name="method-i-genbs_keyconstructnote"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">genbs_keyconstructnote</span><span
+						class="method-args">(root,is_minor)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ベーシックスペースの調告ｬ音レベルを決定
+</p>
+<h2>引数</h2>
+<dl>
+<dt>root</dt><dd><p>
+調のルート(Int)
+</p>
+</dd>
+<dt>is_minor</dt><dd><p>
+長調/短調フラグ(True->短調,False->長調)(Boolean)
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="genbs-keyconstructnote-source">
+<pre>
+     <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 50</span>
+ 50:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">genbs_keyconstructnote</span>(<span class="ruby-identifier">root</span>,<span class="ruby-identifier">is_minor</span>)
+ 51:                 <span class="ruby-comment cmt">#調のルートのピッチクラスを求める</span>
+ 52:                 <span class="ruby-identifier">nowpc</span> = <span class="ruby-constant">Modint</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">root</span>,<span class="ruby-value">12</span>)
+ 53:                 
+ 54:                 
+ 55:                 <span class="ruby-comment cmt">#長調/短調で場合わけ</span>
+ 56:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">is_minor</span> <span class="ruby-keyword kw">then</span>
+ 57:                         <span class="ruby-comment cmt">#短調の場合（自然短音階）</span>
+ 58:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 59:                         
+ 60:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 61:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 62:                         
+ 63:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">1</span>) <span class="ruby-comment cmt">#半</span>
+ 64:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 65:                         
+ 66:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 67:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 68:                         
+ 69:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 70:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 71:                         
+ 72:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">1</span>) <span class="ruby-comment cmt">#半</span>
+ 73:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 74:                         
+ 75:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 76:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 77:                 <span class="ruby-keyword kw">else</span>
+ 78:                         <span class="ruby-comment cmt">#長調の場合</span>
+ 79:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 80:                         
+ 81:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 82:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 83:                         
+ 84:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 85:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 86:                         
+ 87:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">1</span>) <span class="ruby-comment cmt">#半</span>
+ 88:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 89:                         
+ 90:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 91:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 92:                         
+ 93:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 94:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 95:                         
+ 96:                         <span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">add</span>(<span class="ruby-value">2</span>) <span class="ruby-comment cmt">#全</span>
+ 97:                         <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]=<span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">nowpc</span>.<span class="ruby-identifier">get</span>]<span class="ruby-operator">+</span><span class="ruby-value">1</span>
+ 98:                 <span class="ruby-keyword kw">end</span>
+ 99: 
+100:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-bs-method" class="method-detail ">
+				<a name="method-i-get_bs"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_bs</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+basicspaceを返す
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-bs-source">
+<pre>
+     <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 230</span>
+230:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_bs</span>()
+231:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@bs</span>
+232:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+p method 対応
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+     <span class="ruby-comment cmt"># File Basicspace/Basicspace.rb, line 235</span>
+235:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+236:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\tfedcba\n--------------\n&quot;</span>
+237:                 <span class="ruby-value">12</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+238:                 <span class="ruby-identifier">buf</span> = <span class="ruby-constant">Pitchclass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">i</span>)
+239:                 <span class="ruby-identifier">print</span> <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">getname</span>,<span class="ruby-value str">&quot;\t&quot;</span>
+240:                 <span class="ruby-ivar">@bs</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+241:                         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;*&quot;</span>
+242:                 <span class="ruby-keyword kw">end</span>
+243:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+244:                 <span class="ruby-keyword kw">end</span>
+245:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+246:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

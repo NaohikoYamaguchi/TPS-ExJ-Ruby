@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Basicspace_calculator</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Basicspace_calculator/Basicspace_calculator_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Basicspace_calculator/Basicspace_calculator.rb">Basicspace_calculator/Basicspace_calculator.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-calc_basicspace">#calc_basicspace</a></li>
+					
+					<li><a href="#method-i-delta_basicspace">#delta_basicspace</a></li>
+					
+					<li><a href="#method-i-get_last_delta">#get_last_delta</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Basicspace_calculator</h1>
+
+		<div id="description">
+			<p>
+<a href="Basicspace_calculator.html">Basicspace_calculator</a>
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>chord_a</dt><dd><p>
+コードネーム(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>chord_b</dt><dd><p>
+コードネーム(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>a_bs</dt><dd><p>
+chord_aのベーシックスペース(<a href="Basicspace.html">Basicspace</a>)
+</p>
+</dd>
+<dt>b_bs</dt><dd><p>
+chord_bのベーシックスペース(<a href="Basicspace.html">Basicspace</a>)
+</p>
+</dd>
+<dt>delta</dt><dd><p>
+直前に計算したベーシックスペース距離(Int)
+</p>
+</dd>
+</dl>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="calc-basicspace-method" class="method-detail ">
+				<a name="method-i-calc_basicspace"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">calc_basicspace</span><span
+						class="method-args">(chord_a,chord_b)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ベーシックスペース関数の値を算出する
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chord_a</dt><dd><p>
+コードネーム(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+<dt>chord_b</dt><dd><p>
+コードネーム(<a href="Chord.html">Chord</a>)
+</p>
+</dd>
+</dl>
+<h2>戻り値</h2>
+<p>
+距離(Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="calc-basicspace-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace_calculator/Basicspace_calculator.rb, line 30</span>
+30:         <span class="ruby-keyword kw">def</span>    <span class="ruby-identifier">calc_basicspace</span> (<span class="ruby-identifier">chord_a</span>,<span class="ruby-identifier">chord_b</span>)
+31:                 
+32:                 <span class="ruby-comment cmt">#引数をプロパティに記録する</span>
+33:                         <span class="ruby-ivar">@chord_a</span> = <span class="ruby-identifier">chord_a</span>
+34:                         <span class="ruby-ivar">@chord_b</span> = <span class="ruby-identifier">chord_b</span>
+35:                         
+36: 
+37:                 
+38:                 <span class="ruby-comment cmt">#ベーシックスペースの生成</span>
+39:                 
+40:                         <span class="ruby-ivar">@a_bs</span> = <span class="ruby-constant">Basicspace</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">getchordname</span>(),<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">get_minorflag</span>())
+41:                         <span class="ruby-ivar">@b_bs</span> = <span class="ruby-constant">Basicspace</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">getchordname</span>(),<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">getroot</span>(),<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">get_minorflag</span>())
+42:                         
+43:                 <span class="ruby-comment cmt">#距離の算出</span>
+44:                         <span class="ruby-ivar">@delta</span> = <span class="ruby-identifier">delta_basicspace</span>()
+45:                 
+46:                         <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@delta</span>
+47:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="delta-basicspace-method" class="method-detail ">
+				<a name="method-i-delta_basicspace"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">delta_basicspace</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+ベーシックスペース間距離を算出
+</p>
+<h2>引数</h2>
+<dl>
+<dt>bs_a</dt><dd><p>
+距離を算出されるベーシックスペース(<a
+href="Basicspace.html">Basicspace</a>)
+</p>
+</dd>
+<dt>bs_b</dt><dd><p>
+距離を算出するベーシックスペース(<a href="Basicspace.html">Basicspace</a>)
+</p>
+</dd>
+</dl>
+<h2>戻り値</h2>
+<p>
+距離(Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="delta-basicspace-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace_calculator/Basicspace_calculator.rb, line 56</span>
+56:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">delta_basicspace</span>()
+57:                 <span class="ruby-identifier">delta_pos</span> = <span class="ruby-value">0</span>
+58:                 <span class="ruby-identifier">delta_neg</span> = <span class="ruby-value">0</span>
+59:                 
+60:                 <span class="ruby-value">12</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+61:                         <span class="ruby-identifier">sub</span>=<span class="ruby-ivar">@a_bs</span>.<span class="ruby-identifier">get_bs</span>[<span class="ruby-identifier">i</span>]<span class="ruby-operator">-</span><span class="ruby-ivar">@b_bs</span>.<span class="ruby-identifier">get_bs</span>[<span class="ruby-identifier">i</span>]
+62:                         
+63:                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">sub</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span> <span class="ruby-keyword kw">then</span>
+64:                                 <span class="ruby-identifier">delta_neg</span> <span class="ruby-operator">+=</span> (<span class="ruby-value">1</span> * <span class="ruby-identifier">sub</span>)
+65:                         <span class="ruby-keyword kw">else</span>
+66:                                 <span class="ruby-identifier">delta_pos</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">sub</span>
+67:                         <span class="ruby-keyword kw">end</span>
+68:                 <span class="ruby-keyword kw">end</span>
+69:                 
+70:                 <span class="ruby-keyword kw">return</span> (<span class="ruby-identifier">delta_pos</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">delta_neg</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">delta_neg</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">delta_pos</span>
+71:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-last-delta-method" class="method-detail ">
+				<a name="method-i-get_last_delta"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_last_delta</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+最後に求めたベーシックスペース間距離を返す
+</p>
+<h2>戻り値</h2>
+<p>
+距離(Int)
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-last-delta-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace_calculator/Basicspace_calculator.rb, line 76</span>
+76:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_last_delta</span>()
+77:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@delta</span>
+78:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+p method 対応
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+    <span class="ruby-comment cmt"># File Basicspace_calculator/Basicspace_calculator.rb, line 81</span>
+81:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+82:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;Basicspace( &quot;</span>,<span class="ruby-ivar">@chord_a</span>.<span class="ruby-identifier">getchordname</span>(),<span class="ruby-value str">&quot; , &quot;</span>,<span class="ruby-ivar">@chord_b</span>.<span class="ruby-identifier">getchordname</span>(),<span class="ruby-value str">&quot; ) = &quot;</span>,<span class="ruby-ivar">@delta</span>,<span class="ruby-value str">&quot;\n&quot;</span>
+83:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\tfedcba\t   |   \tfedcba\n---------------\t---+---\t-------\n&quot;</span>
+84:                 <span class="ruby-value">12</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+85:                 <span class="ruby-identifier">buf</span> = <span class="ruby-constant">Pitchclass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">i</span>)
+86:                 <span class="ruby-identifier">print</span> <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">getname</span>,<span class="ruby-value str">&quot;\t&quot;</span>
+87:                 <span class="ruby-ivar">@a_bs</span>.<span class="ruby-identifier">get_bs</span>()[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+88:                         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;*&quot;</span>
+89:                 <span class="ruby-keyword kw">end</span>
+90:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\t   |   \t&quot;</span>
+91:                 <span class="ruby-ivar">@b_bs</span>.<span class="ruby-identifier">get_bs</span>()[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+92:                         <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;*&quot;</span>
+93:                 <span class="ruby-keyword kw">end</span>
+94:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+95:                 <span class="ruby-keyword kw">end</span>
+96:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+97:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

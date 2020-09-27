@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Search</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Music/Music_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Music/Music.rb">Music/Music.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-aStar">#aStar</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+					<li><a href="#method-i-newbranch">#newbranch</a></li>
+					
+					<li><a href="#method-i-newnode">#newnode</a></li>
+					
+					<li><a href="#method-i-setstart_goal">#setstart_goal</a></li>
+					
+					<li><a href="#method-i-to_s">#to_s</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Search</h1>
+
+		<div id="description">
+			<p>
+グラフ探索を行なうためのSearchクラス
+</p>
+<h2>謝辞（参考文献）</h2>
+<p>
+書籍「Java
+データ国｢とアルゴリズム基礎講座」所収のコードをRubyに移植し，改造したものである．
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>node</dt><dd><p>
+ノード一覧
+</p>
+</dd>
+<dt>goal</dt><dd><p>
+終点ノード
+</p>
+</dd>
+<dt>start</dt><dd><p>
+始点ノード
+</p>
+</dd>
+</dl>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+コンストラクタ 状態空間を生成するメャbドを呼び出す
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 154</span>
+154:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>()
+155:                 <span class="ruby-ivar">@node</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+156:                 <span class="ruby-comment cmt">#makeStateSpace()</span>
+157:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="a-tar-method" class="method-detail ">
+				<a name="method-i-aStar"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">aStar</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+A(A*)アルゴリズムによる最短路探索
+全てのノードに登録されたヒューリスティック値が0の場合，ダイクストラ法に一致する
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="a-tar-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 216</span>
+216:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">aStar</span>()
+217:                 <span class="ruby-identifier">open</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+218:                 <span class="ruby-identifier">open</span>.<span class="ruby-identifier">push</span>(<span class="ruby-ivar">@start</span>)
+219:                 
+220:                 <span class="ruby-ivar">@start</span>.<span class="ruby-identifier">setG</span>(<span class="ruby-value">0</span>)
+221:                 <span class="ruby-ivar">@start</span>.<span class="ruby-identifier">setF</span>(<span class="ruby-value">0</span>)
+222:                 
+223:                 <span class="ruby-identifier">closed</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+224:                 
+225:                 <span class="ruby-identifier">success</span> = <span class="ruby-keyword kw">false</span>
+226:                 
+227:                 <span class="ruby-identifier">step</span> = <span class="ruby-value">0</span>
+228:                 
+229:                 <span class="ruby-keyword kw">while</span> <span class="ruby-keyword kw">true</span>
+230:                         <span class="ruby-comment cmt">#ステップ数の表示とカウントアップ</span>
+231:                         <span class="ruby-comment cmt">#print &quot;STEP:&quot; , step.to_s , &quot;\n&quot;</span>
+232:                         <span class="ruby-identifier">step</span> = <span class="ruby-identifier">step</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+233:                         
+234:                         <span class="ruby-comment cmt">#これからチェックするノードのリスト</span>
+235:                         <span class="ruby-comment cmt">#print &quot; OPEN:&quot; , open.to_s , &quot;\n&quot;</span>
+236:                         <span class="ruby-comment cmt">#チェックの終わったノードのリスト</span>
+237:                         <span class="ruby-comment cmt">#print &quot; closed:&quot; , closed.to_s , &quot;\n&quot;</span>
+238:                         
+239:                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">open</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-keyword kw">then</span>
+240:                         <span class="ruby-comment cmt">#もう調べるべきノードが存在しない場合falseを返して終わり</span>
+241:                                 <span class="ruby-identifier">success</span> = <span class="ruby-keyword kw">false</span>
+242:                                 <span class="ruby-keyword kw">break</span>
+243:                         <span class="ruby-keyword kw">else</span>
+244:                                 <span class="ruby-comment cmt">#調べるべきノードが存在する場合</span>
+245:                                 <span class="ruby-comment cmt">#次に調べるノードをopenからnodeへ移す</span>
+246:                                 <span class="ruby-identifier">node</span> = <span class="ruby-identifier">open</span>[<span class="ruby-value">0</span>]
+247:                                 <span class="ruby-identifier">open</span>.<span class="ruby-identifier">delete_at</span>(<span class="ruby-value">0</span>)
+248:                                 
+249:                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">node</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@goal</span> <span class="ruby-keyword kw">then</span>
+250:                                 <span class="ruby-comment cmt">#nodeがゴールならtrueを返して終わり</span>
+251:                                         <span class="ruby-identifier">success</span> = <span class="ruby-keyword kw">true</span>
+252:                                         <span class="ruby-keyword kw">break</span>
+253:                                 <span class="ruby-keyword kw">else</span>
+254:                                 <span class="ruby-comment cmt">#nodeがまだゴールじゃない</span>
+255:                                         <span class="ruby-comment cmt">#nodeの子ノードを展開</span>
+256:                                         <span class="ruby-identifier">children</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getChildren</span>()
+257:                                         
+258:                                         <span class="ruby-comment cmt">#チェックの終わったノードリストにnodeを追加</span>
+259:                                         <span class="ruby-identifier">closed</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">node</span>)
+260:                                         
+261:                                         <span class="ruby-identifier">children</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+262:                                                 <span class="ruby-comment cmt">#子ノードのi番目をmに移す</span>
+263:                                                 <span class="ruby-identifier">m</span> = <span class="ruby-identifier">children</span>[<span class="ruby-identifier">i</span>]
+264:                                                 
+265:                                                 <span class="ruby-comment cmt">#nodeまでの評価値とnode-&gt;mのコストを足したものを</span>
+266:                                                 <span class="ruby-comment cmt">#gmnとする</span>
+267:                                                 <span class="ruby-identifier">gmn</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getG</span>().<span class="ruby-identifier">to_i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">getCost</span>(<span class="ruby-identifier">m</span>).<span class="ruby-identifier">to_i</span>
+268:                                                 
+269:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">open</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">closed</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-keyword kw">then</span>
+270:                                                 <span class="ruby-comment cmt">#もしも、子ノードがopenにもclosedにも存在しないなら</span>
+271:                                                 <span class="ruby-comment cmt">#（つまり未チェックかつチェック予定にも存在しないなら）</span>
+272:                                                         <span class="ruby-comment cmt">#mのコストとしてgmnを入れる</span>
+273:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setG</span>(<span class="ruby-identifier">gmn</span>)
+274:                                                 <span class="ruby-keyword kw">end</span>
+275:                                                 
+276:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">open</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-keyword kw">then</span>
+277:                                                 <span class="ruby-comment cmt">#もしも、子ノードがopenに存在するならば</span>
+278:                                                         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">gmn</span> <span class="ruby-operator">&lt;</span> (<span class="ruby-identifier">m</span>.<span class="ruby-identifier">getG</span>()) <span class="ruby-keyword kw">then</span>
+279:                                                         <span class="ruby-comment cmt">#今求めた評価値が、計算済みのコストより小さいなら</span>
+280:                                                                 <span class="ruby-comment cmt">#評価値を更新</span>
+281:                                                                 <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setG</span>(<span class="ruby-identifier">gmn</span>)
+282:                                                                 <span class="ruby-comment cmt">#親ノードを更新</span>
+283:                                                                 <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setpointer</span>(<span class="ruby-identifier">node</span>)
+284:                                                         <span class="ruby-keyword kw">end</span>
+285:                                                 <span class="ruby-keyword kw">end</span>
+286:                                                 
+287:                                                 <span class="ruby-identifier">fmn</span> = <span class="ruby-identifier">gmn</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">getH</span>()
+288:                                         
+289:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">open</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">closed</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-keyword kw">then</span>
+290:                                                 <span class="ruby-comment cmt">#もしも、子ノードがopenにもclosedにも存在しないなら</span>
+291:                                                 <span class="ruby-comment cmt">#（つまり未チェックかつチェック予定にも存在しないなら）</span>
+292:                                                         <span class="ruby-comment cmt">#親ノードを更新</span>
+293:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setpointer</span>(<span class="ruby-identifier">node</span>)
+294:                                                         
+295:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setF</span>(<span class="ruby-identifier">fmn</span>)
+296:                                                         <span class="ruby-identifier">open</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">m</span>)
+297:                                                 <span class="ruby-keyword kw">end</span>
+298:                                                 
+299:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">open</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">fmn</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">getF</span>() <span class="ruby-keyword kw">then</span>
+300:                                                 <span class="ruby-comment cmt">#子ノードがチェック予定にあって評価値がfmnより低いなら</span>
+301:                                                         <span class="ruby-comment cmt">#評価値をfmnにする</span>
+302:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setF</span>(<span class="ruby-identifier">fmn</span>)
+303:                                                         
+304:                                                         <span class="ruby-comment cmt">#チェック予定に追加</span>
+305:                                                         <span class="ruby-identifier">open</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">m</span>)
+306:                                                         
+307:                                                         <span class="ruby-comment cmt">#親ノードを更新</span>
+308:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setpointer</span>(<span class="ruby-identifier">node</span>)
+309:                                                 <span class="ruby-keyword kw">end</span>
+310:                                                 
+311:                                                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">closed</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">m</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">fmn</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">m</span>.<span class="ruby-identifier">getF</span>() <span class="ruby-keyword kw">then</span>
+312:                                                         <span class="ruby-comment cmt">#親ノードを更新</span>
+313:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setpointer</span>(<span class="ruby-identifier">node</span>)
+314:                                                         
+315:                                                         <span class="ruby-comment cmt">#評価値をfmnにする</span>
+316:                                                         <span class="ruby-identifier">m</span>.<span class="ruby-identifier">setF</span>(<span class="ruby-identifier">fmn</span>)
+317:                                                         
+318:                                                         <span class="ruby-comment cmt">#closedにある最初のmを削除</span>
+319:                                                         <span class="ruby-identifier">closed</span>.<span class="ruby-identifier">delete_at</span>(<span class="ruby-identifier">closed</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">m</span>))
+320:                                                         
+321:                                                         <span class="ruby-comment cmt">#チェック予定に追加</span>
+322:                                                         <span class="ruby-identifier">open</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">m</span>)
+323:                                                 <span class="ruby-keyword kw">end</span>
+324:                                         <span class="ruby-keyword kw">end</span>
+325:                                 <span class="ruby-keyword kw">end</span>
+326:                         <span class="ruby-keyword kw">end</span>
+327:                         <span class="ruby-identifier">open</span>.<span class="ruby-identifier">sort!</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span><span class="ruby-operator">|</span><span class="ruby-identifier">a</span>.<span class="ruby-identifier">getF</span>() <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">b</span>.<span class="ruby-identifier">getF</span>()}
+328:                 <span class="ruby-keyword kw">end</span>
+329:                 <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">success</span>
+330:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+pメャbド対応のため実装。 求められた経路をゴールからさかのぼって侮ｦ
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 191</span>
+191:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+192:                 <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">to_s</span>()
+193:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="newbranch-method" class="method-detail ">
+				<a name="method-i-newbranch"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">newbranch</span><span
+						class="method-args">(parentid,childid,cost)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+状態空間のノード間に枝を張る
+</p>
+<h2>引数</h2>
+<dl>
+<dt>parentid</dt><dd><p>
+親のノードID
+</p>
+</dd>
+<dt>childid</dt><dd><p>
+子のノードID
+</p>
+</dd>
+<dt>cost</dt><dd><p>
+枝のコスト
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="newbranch-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 175</span>
+175:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">newbranch</span>(<span class="ruby-identifier">parentid</span>,<span class="ruby-identifier">childid</span>,<span class="ruby-identifier">cost</span>)
+176:                 <span class="ruby-ivar">@node</span>[<span class="ruby-identifier">parentid</span>].<span class="ruby-identifier">addChild</span>(<span class="ruby-ivar">@node</span>[<span class="ruby-identifier">childid</span>],<span class="ruby-identifier">cost</span>)
+177:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="newnode-method" class="method-detail ">
+				<a name="method-i-newnode"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">newnode</span><span
+						class="method-args">(name,heuristic)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+状態空間にノードを追加する
+</p>
+<h2>引数</h2>
+<dl>
+<dt>name</dt><dd><p>
+ノード名
+</p>
+</dd>
+<dt>heuristic</dt><dd><p>
+ヒューリスティック値
+</p>
+</dd>
+</dl>
+<h2>返り値</h2>
+<p>
+登録されたノードID(Int）
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="newnode-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 165</span>
+165:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">newnode</span>(<span class="ruby-identifier">name</span>,<span class="ruby-identifier">heuristic</span>)
+166:                 <span class="ruby-ivar">@node</span>.<span class="ruby-identifier">push</span> <span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">name</span>,<span class="ruby-identifier">heuristic</span>)
+167:                 <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@node</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+168:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="setstart-goal-method" class="method-detail ">
+				<a name="method-i-setstart_goal"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">setstart_goal</span><span
+						class="method-args">(startid,endid)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+状態空間の始点ノードと終点ノードを登録
+</p>
+<h2>引数</h2>
+<dl>
+<dt>starid</dt><dd><p>
+始点ノードとするノードのID
+</p>
+</dd>
+<dt>endid</dt><dd><p>
+終点ノードとするノードのID
+</p>
+</dd>
+</dl>
+					
+
+					
+					<div class="method-source-code"
+						id="setstart-goal-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 183</span>
+183:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">setstart_goal</span>(<span class="ruby-identifier">startid</span>,<span class="ruby-identifier">endid</span>)
+184:                 <span class="ruby-ivar">@start</span> = <span class="ruby-ivar">@node</span>[<span class="ruby-identifier">startid</span>]
+185:                 <span class="ruby-ivar">@goal</span> = <span class="ruby-ivar">@node</span>[<span class="ruby-identifier">endid</span>]
+186:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="method-i-to_s"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 195</span>
+195:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>()
+196:                 <span class="ruby-identifier">now</span> = <span class="ruby-ivar">@goal</span>
+197:                 
+198:                 <span class="ruby-identifier">result</span> = <span class="ruby-value str">&quot;&quot;</span>
+199:                 
+200:                 <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">now</span>.<span class="ruby-identifier">getpointer</span>() <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>
+201:                         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">result</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; &lt;- &quot;</span>
+202:                         <span class="ruby-identifier">now</span> = <span class="ruby-identifier">now</span>.<span class="ruby-identifier">getpointer</span>()
+203:                 <span class="ruby-keyword kw">end</span>
+204:                 
+205:                 <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">now</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@start</span> <span class="ruby-keyword kw">then</span>
+206:                         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">result</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n *Route search was successful.*&quot;</span>
+207:                 <span class="ruby-keyword kw">else</span>
+208:                         <span class="ruby-identifier">result</span> = <span class="ruby-identifier">result</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;*Route search failed.&quot;</span>
+209:                 <span class="ruby-keyword kw">end</span>
+210:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

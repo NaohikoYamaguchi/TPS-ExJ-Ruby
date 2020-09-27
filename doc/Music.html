@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=shift_jis" http-equiv="Content-Type" />
+
+	<title>Class: Music</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./Music/Music_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="Music/Music.rb">Music/Music.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-explain">#explain</a></li>
+					
+					<li><a href="#method-i-inspect">#inspect</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Basicspace.html">Basicspace</a></li>
+				
+					<li><a href="./Basicspace_calculator.html">Basicspace_calculator</a></li>
+				
+					<li><a href="./Chord.html">Chord</a></li>
+				
+					<li><a href="./Chord_calculator.html">Chord_calculator</a></li>
+				
+					<li><a href="./Delta_Chord_calculator.html">Delta_Chord_calculator</a></li>
+				
+					<li><a href="./Modint.html">Modint</a></li>
+				
+					<li><a href="./Music.html">Music</a></li>
+				
+					<li><a href="./Node.html">Node</a></li>
+				
+					<li><a href="./Pitchclass.html">Pitchclass</a></li>
+				
+					<li><a href="./Region_calculator.html">Region_calculator</a></li>
+				
+					<li><a href="./Search.html">Search</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Music</h1>
+
+		<div id="description">
+			<p>
+<a href="Music.html">Music</a>
+</p>
+<h1>プロパティ</h1>
+<dl>
+<dt>chordlist</dt><dd><p>
+和音クラス格納行列(Array)
+</p>
+</dd>
+<dt>chordgraph</dt><dd><p>
+和音探索グラフ(<a href="Search.html">Search</a>)
+</p>
+</dd>
+</dl>
+<h1>動作</h1>
+<p>
+TPSの呼び出し元．
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="explain-method" class="method-detail ">
+				<a name="method-i-explain"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">explain</span><span
+						class="method-args">(chordsheet)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+和声進行の解釈を行う
+</p>
+<h2>引数</h2>
+<dl>
+<dt>chordsheet</dt><dd><p>
+和音名をカンマ区切りで列挙した文字列(String)
+</p>
+</dd>
+</dl>
+<h2>動作</h2>
+<ul>
+<li><p>
+クラスの初期化を行う。
+</p>
+</li>
+<li><p>
+chordlistの設定
+</p>
+</li>
+<li><p>
+和音探索グラフの生成
+</p>
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="explain-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 350</span>
+350:                 <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">explain</span>(<span class="ruby-identifier">chordsheet</span>)
+351:                 <span class="ruby-comment cmt">#@chordlistを配列宣言</span>
+352:                 <span class="ruby-ivar">@chordlist</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+353:                 
+354:                 <span class="ruby-comment cmt">#カンマ区切りで渡された和音名列を配列に分割</span>
+355:                 <span class="ruby-identifier">chordlistbuf</span> = <span class="ruby-identifier">chordsheet</span>.<span class="ruby-identifier">split</span>(<span class="ruby-value str">','</span>)
+356:                 
+357:                 <span class="ruby-comment cmt">#全ての調パターンを生成</span>
+358:                 <span class="ruby-identifier">chordlistbuf</span>.<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">cd</span><span class="ruby-operator">|</span>
+359:                         <span class="ruby-ivar">@chordlist</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>)
+360:                         (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">11</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">rootpc</span><span class="ruby-operator">|</span>
+361:                                 <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">cd</span>].<span class="ruby-identifier">push</span>(<span class="ruby-constant">Array</span>[<span class="ruby-identifier">chordlistbuf</span>[<span class="ruby-identifier">cd</span>],<span class="ruby-identifier">rootpc</span>,<span class="ruby-keyword kw">false</span>])
+362:                                 <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">cd</span>].<span class="ruby-identifier">push</span>(<span class="ruby-constant">Array</span>[<span class="ruby-identifier">chordlistbuf</span>[<span class="ruby-identifier">cd</span>],<span class="ruby-identifier">rootpc</span>,<span class="ruby-keyword kw">true</span>])
+363:                         <span class="ruby-keyword kw">end</span>
+364:                 <span class="ruby-keyword kw">end</span>
+365:                 
+366:                 <span class="ruby-comment cmt">#ここから探索グラフの作成</span>
+367:                 <span class="ruby-comment cmt">#グラフクラス生成</span>
+368:                 <span class="ruby-ivar">@chordgraph</span> = <span class="ruby-constant">Search</span>.<span class="ruby-identifier">new</span>
+369:                 
+370:                 <span class="ruby-comment cmt">#グラフクラスにノードを登録し，ノード番号を記録</span>
+371:                 <span class="ruby-ivar">@chordlist</span>.<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+372:                         <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">each_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+373:                                 <span class="ruby-identifier">nodename</span> = <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-value">0</span>] <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-value">1</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-value">2</span>].<span class="ruby-identifier">to_s</span>
+374:                                 <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-value">3</span>]=<span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newnode</span>(<span class="ruby-identifier">nodename</span>,<span class="ruby-value">0</span>)
+375:                         <span class="ruby-keyword kw">end</span>
+376:                 <span class="ruby-keyword kw">end</span>
+377:                 
+378:                 
+379:                 <span class="ruby-comment cmt">#出発ノード・終点ノードを作成</span>
+380:                 <span class="ruby-identifier">startid</span> = <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newnode</span>(<span class="ruby-value str">&quot;START&quot;</span>,<span class="ruby-value">0</span>)
+381:                 <span class="ruby-identifier">endid</span> = <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newnode</span>(<span class="ruby-value str">&quot;END&quot;</span>,<span class="ruby-value">0</span>)
+382:                 
+383:                 <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">setstart_goal</span>(<span class="ruby-identifier">startid</span>,<span class="ruby-identifier">endid</span>)
+384:                 
+385:                 <span class="ruby-comment cmt">#1つ目の和音は，すべて出発ノードとコスト0でリンク作成</span>
+386:                 <span class="ruby-ivar">@chordlist</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+387:                         <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newbranch</span>(<span class="ruby-identifier">startid</span>,<span class="ruby-identifier">i</span>[<span class="ruby-value">3</span>],<span class="ruby-value">0</span>)
+388:                 <span class="ruby-keyword kw">end</span>
+389:                 
+390:                 <span class="ruby-comment cmt">#最後の和音は，すべて終点ノードとコスト0でリンク作成</span>
+391:                 <span class="ruby-ivar">@chordlist</span>[(<span class="ruby-ivar">@chordlist</span>.<span class="ruby-identifier">length</span>) <span class="ruby-operator">-</span><span class="ruby-value">1</span> ].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+392:                         <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newbranch</span>(<span class="ruby-identifier">i</span>[<span class="ruby-value">3</span>],<span class="ruby-identifier">endid</span>,<span class="ruby-value">0</span>)
+393:                 <span class="ruby-keyword kw">end</span>
+394:                 
+395:                 <span class="ruby-comment cmt">#各枝のコストを計算しながらリンクを作成</span>
+396:                 
+397:                 <span class="ruby-identifier">tps_cal</span> = <span class="ruby-constant">Delta_Chord_calculator</span>.<span class="ruby-identifier">new</span>
+398:                 
+399:                 <span class="ruby-identifier">logfile</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;Test_log.txt&quot;</span>,<span class="ruby-value str">'a'</span>)
+400:                 <span class="ruby-identifier">logfile</span>.<span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n @@ &quot;</span>,<span class="ruby-identifier">chordsheet</span>,<span class="ruby-value str">&quot; @@@\n&quot;</span>
+401:                 <span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n@@@ &quot;</span>,<span class="ruby-identifier">chordsheet</span>,<span class="ruby-value str">&quot; @@@\n&quot;</span>
+402:                 
+403:                 
+404:                 <span class="ruby-comment cmt">#(@chordlist.length) -1回繰り返し</span>
+405:                 ((<span class="ruby-ivar">@chordlist</span>.<span class="ruby-identifier">length</span>) <span class="ruby-operator">-</span><span class="ruby-value">1</span>).<span class="ruby-identifier">times</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+406:                         <span class="ruby-comment cmt">#i番目の和音候補配列の全てから</span>
+407:                         <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+408:                                 <span class="ruby-comment cmt">#i+1番目の和音候補配列の全てへ</span>
+409:                                 <span class="ruby-ivar">@chordlist</span>[<span class="ruby-identifier">i</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+410:                                         <span class="ruby-comment cmt">#Chordクラスの生成</span>
+411:                                         <span class="ruby-identifier">x</span> = <span class="ruby-constant">Chord</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">j</span>[<span class="ruby-value">0</span>])
+412:                                         <span class="ruby-identifier">x</span>.<span class="ruby-identifier">setkey</span>(<span class="ruby-identifier">j</span>[<span class="ruby-value">1</span>],<span class="ruby-identifier">j</span>[<span class="ruby-value">2</span>])
+413:                                         
+414:                                         <span class="ruby-identifier">y</span> = <span class="ruby-constant">Chord</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">k</span>[<span class="ruby-value">0</span>])
+415:                                         <span class="ruby-identifier">y</span>.<span class="ruby-identifier">setkey</span>(<span class="ruby-identifier">k</span>[<span class="ruby-value">1</span>],<span class="ruby-identifier">k</span>[<span class="ruby-value">2</span>])
+416:                                         
+417:                                         <span class="ruby-identifier">distance</span> = <span class="ruby-identifier">tps_cal</span>.<span class="ruby-identifier">calc_chord_delta</span>(<span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span>)
+418:                                         <span class="ruby-identifier">distance_ary</span> = <span class="ruby-constant">Array</span>[<span class="ruby-identifier">tps_cal</span>.<span class="ruby-identifier">get_last_delta_chord</span>,<span class="ruby-identifier">tps_cal</span>.<span class="ruby-identifier">get_last_delta_region</span>,<span class="ruby-identifier">tps_cal</span>.<span class="ruby-identifier">get_last_delta_basicspace</span>]
+419:                                         
+420:                                         <span class="ruby-comment cmt">#枝作成</span>
+421:                                         <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">newbranch</span>(<span class="ruby-identifier">j</span>[<span class="ruby-value">3</span>],<span class="ruby-identifier">k</span>[<span class="ruby-value">3</span>],<span class="ruby-identifier">distance</span>)
+422:                                         
+423:                                         <span class="ruby-identifier">logfile</span>.<span class="ruby-identifier">print</span> <span class="ruby-identifier">j</span>.<span class="ruby-identifier">to_s</span>,<span class="ruby-value str">&quot;\t&quot;</span>,<span class="ruby-identifier">distance</span>,<span class="ruby-value str">&quot;(C:&quot;</span>,<span class="ruby-identifier">distance_ary</span>[<span class="ruby-value">0</span>],<span class="ruby-value str">&quot; R:&quot;</span>,<span class="ruby-identifier">distance_ary</span>[<span class="ruby-value">1</span>],<span class="ruby-value str">&quot; B:&quot;</span>,<span class="ruby-identifier">distance_ary</span>[<span class="ruby-value">2</span>],<span class="ruby-value str">&quot;)\t&quot;</span>,<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>,<span class="ruby-value str">&quot;\n&quot;</span>
+424:                                         <span class="ruby-comment cmt">#print j.to_s,&quot;\t&quot;,distance,&quot;\t&quot;,k.to_s,&quot;\n&quot;       #debug</span>
+425:                                 <span class="ruby-keyword kw">end</span>
+426:                         <span class="ruby-keyword kw">end</span>
+427:                         <span class="ruby-identifier">logfile</span>.<span class="ruby-identifier">print</span> <span class="ruby-value str">&quot;\n&quot;</span>
+428:                 <span class="ruby-keyword kw">end</span>
+429:                 
+430:                 <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">aStar</span>()
+431:                 
+432:                 <span class="ruby-identifier">logfile</span>.<span class="ruby-identifier">print</span> <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">inspect</span>
+433:                 <span class="ruby-identifier">p</span> <span class="ruby-ivar">@chordgraph</span>
+434:                 
+435:                 <span class="ruby-identifier">logfile</span>.<span class="ruby-identifier">close</span>
+436:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="inspect-method" class="method-detail ">
+				<a name="method-i-inspect"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">inspect</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+p method 対応
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="inspect-source">
+<pre>
+     <span class="ruby-comment cmt"># File Music/Music.rb, line 441</span>
+441:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">inspect</span>()
+442:                 <span class="ruby-keyword kw">return</span>  <span class="ruby-ivar">@chordgraph</span>.<span class="ruby-identifier">to_s</span>
+443:         <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
