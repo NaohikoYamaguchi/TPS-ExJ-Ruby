@@ -1,4 +1,5 @@
 # TPS-ExJ
+
 Library of TPS-ExJ (Tonal Pitch Space - EXtended for Jazz). 
 #Preface : はじめに
 This libraly (TPS-EXJ : Tonal Pitch Space - EXtended for Jazz) is deliverable on Naohiko Yamaguchi's master thesis, Improving TPS to Tackle Non Key Constituent Note.
@@ -12,6 +13,7 @@ Fred Lerdahlによって提唱された計算論的音楽理論TPS(Tonal Pitch Space)を、
 技術的な詳細は参考文献をご参照ください。
 
 #requirements : 動作環境
+
 This library run with Ruby 1.9 on (Japanese) windows.
 Perhaps, it can run on UNIX or MacOS if you convert appropriate character set.
 
@@ -21,6 +23,7 @@ Windows上にインストールしたRuby 1.9で制作し、動作を確認しています。
 ソースファイルの文字コードを変換すれば動作すると思いますが、未確認です。
 
 #License : ライセンス
+
 This libraly release by New BSD License.
 
 本ライブラリは修正BSDライセンス（New BSD License）を採用しています。
@@ -29,6 +32,7 @@ This libraly release by New BSD License.
 また、ライブラリそのものの改造も歓迎いたします。
 
 #How to Use : 使い方
+
 If you would like to try this libraly, Run Music/Music.rb at first.
 
 On line 458, explain method get code name list of head of "Fly me to the moon".
