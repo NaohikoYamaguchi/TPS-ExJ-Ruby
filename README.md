@@ -12,7 +12,7 @@ Fred Lerdahlによって提唱された計算論的音楽理論TPS(Tonal Pitch Space)を、
 より複雑な和音を扱えるように拡張させることを試みました。
 技術的な詳細は参考文献をご参照ください。
 
-#requirements : 動作環境
+# Requirements : 動作環境
 
 This library run with Ruby 1.9 on (Japanese) windows.
 Perhaps, it can run on UNIX or MacOS if you convert appropriate character set.
@@ -22,7 +22,7 @@ Windows上にインストールしたRuby 1.9で制作し、動作を確認しています。
 特にOSや他のライブラリに依存するような部分はありませんので、UNIXやMacOS上でも、
 ソースファイルの文字コードを変換すれば動作すると思いますが、未確認です。
 
-#License : ライセンス
+# License : ライセンス
 
 This libraly release by New BSD License.
 
@@ -31,7 +31,7 @@ This libraly release by New BSD License.
 （あくまでお願いであり、強制ではありません）
 また、ライブラリそのものの改造も歓迎いたします。
 
-#How to Use : 使い方
+# How to Use : 使い方
 
 If you would like to try this libraly, Run Music/Music.rb at first.
 
